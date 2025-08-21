@@ -1,3 +1,18 @@
+@article{VAZQUEZ201615,
+title = {Alya: Multiphysics engineering simulation toward exascale},
+journal = {Journal of Computational Science},
+volume = {14},
+pages = {15-27},
+year = {2016},
+note = {The Route to Exascale: Novel Mathematical Methods, Scalable Algorithms and Computational Science Skills},
+issn = {1877-7503},
+doi = {https://doi.org/10.1016/j.jocs.2015.12.007},
+url = {https://www.sciencedirect.com/science/article/pii/S1877750315300521},
+author = {Mariano Vázquez and Guillaume Houzeaux and Seid Koric and Antoni Artigues and Jazmin Aguado-Sierra and Ruth Arís and Daniel Mira and Hadrien Calmet and Fernando Cucchietti and Herbert Owen and Ahmed Taha and Evan Dering Burness and José María Cela and Mateo Valero},
+keywords = {Multi-physics coupling, Parallelization, Computational mechanics},
+abstract = {Alya is a multi-physics simulation code developed at Barcelona Supercomputing Center (BSC). From its inception Alya code is designed using advanced High Performance Computing programming techniques to solve coupled problems on supercomputers efficiently. The target domain is engineering, with all its particular features: complex geometries and unstructured meshes, coupled multi-physics with exotic coupling schemes and physical models, ill-posed problems, flexibility needs for rapidly including new models, etc. Since its beginnings in 2004, Alya has scaled well in an increasing number of processors when solving single-physics problems such as fluid mechanics, solid mechanics, acoustics, etc. Over time, we have made a concerted effort to maintain and even improve scalability for multi-physics problems. This poses challenges on multiple fronts, including: numerical models, parallel implementation, physical coupling models, algorithms and solution schemes, meshing process, etc. In this paper, we introduce Alya's main features and focus particularly on its solvers. We present Alya's performance up to 100.000 processors in Blue Waters, the NCSA supercomputer with selected multi-physics tests that are representative of the engineering world. The tests are incompressible flow in a human respiratory system, low Mach combustion problem in a kiln furnace, and coupled electro-mechanical contraction of the heart. We show scalability plots for all cases and discuss all aspects of such simulations, including solver convergence.}
+}
+
 @article{lancellotti_topica_2006,
 	title = {{TOPICA}: an accurate and efficient numerical tool for analysis and design of {ICRF} antennas},
 	volume = {46},
@@ -15,3 +30,177 @@
 	year = {2006},
 	pages = {S476},
 }
+
+@article{wright_antenna_2017,
+	title = {Antenna to {Core}: {A} {New} {Approach} to {RF} {Modelling}},
+	volume = {157},
+	copyright = {© The authors, published by EDP Sciences, 2017},
+	issn = {2100-014X},
+	shorttitle = {Antenna to {Core}},
+	url = {https://www.epj-conferences.org/articles/epjconf/abs/2017/26/epjconf_rfppc2017_02011/epjconf_rfppc2017_02011.html},
+	doi = {10.1051/epjconf/201715702011},
+	abstract = {A new technique for the calculation of RF waves in toroidal geometry enables the simultaneous incorporation of antenna geometry, plasma facing components (PFCs), the scrape off-layer (SOL) and core propagation [Shiraiwa et al, “HIS-TORIC: Extending core ICRF wave simulation to include realistic SOL plasmas”, Nucl. Fusion in press {\textless}b{\textgreater}10{\textless}b/{\textgreater} (2017)]. The calculation of antenna coupling has been traditionally performed separately from those of core propagation whereas this method allows them to be combined permitting the modelling of such phenomena as waves reflected from plasma-vacuum boundary or cyclotron resonances back to the antenna. Calculations with this technique also naturally capture wave propagation in the SOL and its interactions with non-conforming PFCs permitting self-consistent calculation of core absorption and edge power loss.},
+	language = {en},
+	urldate = {2025-02-21},
+	journal = {EPJ Web of Conferences},
+	author = {Wright, J. and Shiraiwa, S.},
+	year = {2017},
+	note = {Publisher: EDP Sciences},
+	pages = {02011},
+	file = {Full Text PDF:C\:\\Users\\herni\\Zotero\\storage\\462526UE\\Wright y Shiraiwa - 2017 - Antenna to Core A New Approach to RF Modelling.pdf:application/pdf},
+}
+
+@article{brambilla_numerical_1999,
+	title = {Numerical simulation of ion cyclotron waves in tokamak plasmas},
+	volume = {41},
+	issn = {0741-3335},
+	url = {https://dx.doi.org/10.1088/0741-3335/41/1/002},
+	doi = {10.1088/0741-3335/41/1/002},
+	abstract = {The code TORIC solves the finite Larmor radius wave equations in the ion cyclotron range of frequencies in arbitrary axisymmetric toroidal geometry. The model used, based on the finite Larmor radius approximation, describes the compressional and torsional Alfvén waves and ion Bernstein waves excited by linear mode conversion. Absorption by the ions occurs at the fundamental and first harmonic of the cyclotron frequency, and by the electrons through Landau and transit time damping. The numerical solution is based on the spectral representation of the wave fields in the poloidal angle , and cubic finite elements in the radial variable . The spectral approach in the poloidal angle allows us to evaluate in a numerically efficient way the integrals over the particle orbits along magnetic field lines which arise when the high frequency (HF) plasma current is obtained by solving the linearized Vlasov equation; the leading effects of toroidicity on cyclotron absorption and spatial dispersion are also taken into account. The code offers a number of options, which allow us to compare the complete finite Larmor radius model with simpler approximations, such as the widely used order reduction algorithm, which replaces the excitation of ion Bernstein waves with an equivalent power sink.},
+	language = {en},
+	number = {1},
+	urldate = {2025-02-20},
+	journal = {Plasma Physics and Controlled Fusion},
+	author = {Brambilla, M.},
+	month = jan,
+	year = {1999},
+	pages = {1},
+}
+
+@article{jucker_integrated_2011,
+	title = {Integrated modeling for ion cyclotron resonant heating in toroidal systems},
+	volume = {182},
+	issn = {0010-4655},
+	url = {https://www.sciencedirect.com/science/article/pii/S0010465510005217},
+	doi = {10.1016/j.cpc.2010.12.028},
+	abstract = {An integrated model capable of self-consistent Ion Cyclotron Resonant Heating (ICRH) simulations has been developed. This model includes both full shaping and pressure effects, warm contributions to the dielectric tensor, pressure anisotropy and finite orbit width. It evolves the equilibrium, wave field and full hot particle distribution function until a self-consistent solution is found. This article describes the workings of the three codes VMEC, LEMan and VENUS and how they are linked for iterated computations in a code package we have named SCENIC. The package is thoroughly tested and it is demonstrated that a number of iterations have to be performed in order to find a consistent solution. Since the formulation of the problem can treat general 3D systems, we show a quasi-axisymmetric stellarator low power test case, and then concentrate on experimentally relevant Joint European Torus (JET) 2D configurations.},
+	number = {4},
+	urldate = {2025-02-20},
+	journal = {Computer Physics Communications},
+	author = {Jucker, M. and Graves, J. P. and Cooper, W. A. and Mellet, N. and Johnson, T. and Brunner, S.},
+	month = apr,
+	year = {2011},
+	pages = {912--925},
+	file = {ScienceDirect Snapshot:C\:\\Users\\herni\\Zotero\\storage\\D52GDBBT\\S0010465510005217.html:text/html},
+}
+
+@article{eriksson_comparison_1993,
+	title = {Comparison of time dependent simulations with experiments in ion cyclotron heated plasmas},
+	volume = {33},
+	issn = {0029-5515},
+	url = {https://dx.doi.org/10.1088/0029-5515/33/7/I07},
+	doi = {10.1088/0029-5515/33/7/I07},
+	abstract = {Comparisons between time dependent simulations and experiments in ion cyclotron heated plasmas in the JET tokamak have been made. A time dependent code, PION-T, has been used to simulate the heating. The scenario that has been analysed is minority heating of hydrogen in a deuterium plasma. Two measured quantities have been compared with the calculations, namely the anisotropic plasma energy content and the 2.4 MeV neutron flux from (D,D) reactions. Two versions of the PION-T code have been used, one with zero banana width and one in which a simplified model for taking the finite width of drift orbits into account is employed. The zero banana width calculations yield good agreement between measurements and calculations for relatively low power levels only. However, with the second version of the code, taking the finite width of the drift orbits into account, good agreement can also be obtained for higher power levels. The non-thermal neutron yield caused by second harmonic absorption by the deuterium is simulated and agreement is found provided the hydrogen concentration, for which no reliable measurements are available, is suitably chosen. Finally, by studying the rapid changes in fast ion energy content in connection with sawtooth instabilities, it is found that about 40\% of the fast ions are expelled outside the q=1 surface and that prompt losses are negligible},
+	language = {en},
+	number = {7},
+	urldate = {2025-02-20},
+	journal = {Nuclear Fusion},
+	author = {Eriksson, L.-G. and Hellsten, T. and Willen, U.},
+	month = jul,
+	year = {1993},
+	pages = {1037},
+}
+
+@article{jaeger_all-orders_2001,
+	title = {All-orders spectral calculation of radio-frequency heating in two-dimensional toroidal plasmas},
+	volume = {8},
+	issn = {1070-664X},
+	url = {https://doi.org/10.1063/1.1359516},
+	doi = {10.1063/1.1359516},
+	abstract = {Spectral calculations of radio-frequency (rf) heating in tokamak plasmas are extended to two dimensions (2-D) by taking advantage of new computational tools for distributed memory, parallel computers. The integral form of the wave equation is solved in 2-D without any assumption regarding the smallness of the ion Larmor radius (ρ) relative to the perpendicular wavelength (λ⊥). Results are therefore applicable to all orders in k⊥ρ, where k⊥=2π/λ⊥. Previous calculations of rf wave propagation and heating in 2-D magnetized plasmas have relied on finite Larmor radius expansions (k⊥ρ≪1) and are thus limited to relatively long wavelengths. In this paper, no such assumption is made, and we consider short wavelength processes such as the excitation and absorption of ion Bernstein waves in 2-D with k⊥ρ\&gt;1. Results show that this phenomenon is far more complex than simple one-dimensional plasma models would suggest. Other applications include fully self-consistent 2-D solutions for high-harmonic fast-wave heating in spherical tokamaks. These calculations require the storage and inversion of a very large, dense matrix, but numerical convergence can be improved by writing the plasma current in the laboratory frame of reference. To accurately represent the wave spectrum in this frame, the local plasma conductivity is corrected to first order in ρ/L, where L is the equilibrium scale length. This correction is necessary to ensure accuracy in calculating the wave spectrum and hence the fraction of power absorbed by ions and electrons.},
+	number = {5},
+	urldate = {2025-02-20},
+	journal = {Physics of Plasmas},
+	author = {Jaeger, E. F. and Berry, L. A. and D’Azevedo, E. and Batchelor, D. B. and Carter, M. D.},
+	month = may,
+	year = {2001},
+	pages = {1573--1583},
+	file = {Snapshot:C\:\\Users\\herni\\Zotero\\storage\\PLSV6NPP\\All-orders-spectral-calculation-of-radio-frequency.html:text/html},
+}
+
+@article{otin_ermes_2025,
+	title = {{ERMES} 20.0: {Open}-source finite element tool for computational electromagnetics in the frequency domain},
+	volume = {310},
+	issn = {0010-4655},
+	shorttitle = {{ERMES} 20.0},
+	url = {https://www.sciencedirect.com/science/article/pii/S0010465525000244},
+	doi = {10.1016/j.cpc.2025.109521},
+	abstract = {ERMES 20.0 is an open-source software which solves the Maxwell's equations in frequency domain with the Finite Element Method (FEM). The new ERMES 20.0 is a significant upgrade from the previous ERMES 7.0 [1]. It introduces new features, modules, and FEM formulations to address the challenging problems commonly encountered in the design and analysis of nuclear fusion reactors [2]. Key additions are the electrostatic and cold plasma module, along with new FEM formulations as the stabilized double-curl edge element formulation [3] and the local L2 projection method with nodal and bubble elements [4,5]. Furthermore, all the formulations now include an A-V potentials version. The ample set of methods available in the new ERMES 20.0 allows the user to select the most suitable FEM formulation to generate the best possible conditioned matrix for each specific problem. ERMES 20.0 operates in the static, quasi-static and the high-frequency regimens, making it a versatile tool which can be used in a wide variety of situations. For instance, it had been applied to microwave engineering, bioelectromagnetics, and electromagnetic compatibility. Now, thanks to the new electrostatic and cold plasma modules, the range of applications has been extended to relevant nuclear fusion engineering problems as: the computation of induced forces, plasma control, probability estimation of electric arc initiation, current distribution in arbitrary geometries, and the study of electromagnetic wave-plasma-wall interactions inside a fusion reactor. ERMES 20.0 is available for Windows and Linux systems and it has improved its capabilities to solve large problems on High Performance Computing (HPC) infrastructures thanks to its new interface with the solver libraries PETSc [6] and Python NumPy [7]. As in previous versions, ERMES 20.0 features a graphical user-friendly interface integrated into the pre- and post-processor GiD [8]. GiD handles geometrical modeling, data input, meshing, and result visualization. ERMES 20.0 is licensed under the open-source software 2-clause BSD license. This document is accompanied by a comprehensive manual that provides a step-by-step installation guide, a detailed description of all the new features and formulations, as well as the executables, user interface, examples, and source code of ERMES 20.0.
+New version program summary
+Program Title: ERMES 20.0 CPC Library link to program files: https://doi.org/10.17632/v946dvxn54.1 Developer's repository link: https://ruben-otin.blogspot.com/ Licensing provisions: BSD 2-clause Programming language: C++ Journal reference of previous version: Comput. Phys. Commun. 184 (11) (2013) 2588–2595 Does the new version supersede the previous version?: Yes Reasons for the new version: This new version is a significant upgrade of the previous version [1], introducing a suite of new features, modules, and FEM formulations. Summary of revisions: This document is accompanied by a comprehensive manual that provides a detailed description of all the new features. Nature of problem: Time-harmonic Maxwell's equations. Solution method: Finite Element Method.
+References
+[1]R. Otin, ERMES: A nodal-based finite element code for electromagnetic simulations in frequency domain, Comput. Phys. Commun. 184 (11) (2013) 2588–2595.[2]R. Otin et al., Computational electromagnetics for nuclear fusion engineering and design, NAFEMS Benchmark Mag. (Jan. 2020) 60–68.[3]P. Monk, Finite Element Methods for Maxwell's Equations, Oxford University Press, 2003.[4]H. Duan, P. Lin, R.C.E. Tan, Solving a Maxwell interface problem by a local L2 projected C0 finite element method, in: ENUMATH 2013, Numer. Math. Adv. Appl. 103 (2015) 795–802.[5]H. Duan, R.C.E. Tan, S.-Y. Yang, C.-S. You, Computation of Maxwell singular solution by nodal-continuous elements, J. Comput. Phys. 268 (2014) 63–83.[6]PETSc, PETSc: the portable, extensible toolkit for scientific computation, 2024 [Online]. Available at: https://petsc.org.[7]NumPy, NumPy: the fundamental package for scientific computing with Python, 2024 [Online]. Available at: https://numpy.org.[8]GiD, GiD: the personal pre- and post-processor, 2024 [Online]. Available at: https://www.gidsimulation.com.},
+	urldate = {2025-02-20},
+	journal = {Computer Physics Communications},
+	author = {Otin, Ruben},
+	month = may,
+	year = {2025},
+	pages = {109521},
+	file = {ScienceDirect Snapshot:C\:\\Users\\herni\\Zotero\\storage\\XGI6CSXB\\S0010465525000244.html:text/html},
+}
+
+@article{dumont_variational_2009,
+	title = {Variational approach to radiofrequency waves in magnetic fusion devices},
+	volume = {49},
+	issn = {0029-5515},
+	url = {https://dx.doi.org/10.1088/0029-5515/49/7/075033},
+	doi = {10.1088/0029-5515/49/7/075033},
+	abstract = {Magnetic fusion plasmas feature two major classes of low frequency electromagnetic oscillations: waves in the ion cyclotron range of frequencies (ICRFs) constitute a well established method employed for plasma heating and current drive, whereas waves in the Alfvén range of frequencies naturally occur in the form of modes in close interaction with fast particles. The propagation of these waves is characterized by significant space-dispersion, making it necessary to incorporate non-local effects in the global kinetic full-wave codes which are often employed for their simulation. We present here a variational approach to this problem, which has the advantage of providing a common framework to the wave calculation and to the quasilinear response description. Two important points are discussed: firstly, we show that the irreversible part of the power transferred from the wave to the plasma particles is directly available and does not require an explicit evaluation of the kinetic flux; secondly, it is demonstrated that the symmetry of the obtained plasma functional ensures that these energy transfers are described in a consistent fashion, regardless of the level of approximation employed to evaluate the particle Hamiltonian. Finally, quasi-local, finite Larmor radius expressions are derived in the framework of this formalism and implemented in a new multi-dimensional full-wave code, named EVE, which is employed to analyse two ICRF heating scenarios for ITER.},
+	language = {en},
+	number = {7},
+	urldate = {2025-02-20},
+	journal = {Nuclear Fusion},
+	author = {Dumont, R.J.},
+	month = jul,
+	year = {2009},
+	pages = {075033},
+}
+
+@phdthesis{vallejos_modeling_2019,
+	address = {Stockholm},
+	type = {Doctoral thesis},
+	title = {Modeling {RF} waves in hot plasmas using the finite element method and wavelet decomposition: {Theory} and applications for ion cyclotron resonance heating in toroidal plasmas},
+	url = {https://kth.diva-portal.org/smash/get/diva2:1377064/FULLTEXT01.pdf},
+	abstract = {Fusion energy has the potential to provide a sustainable solution for generating large quantities of clean energy for human societies. The tokamak fusion reactor is a toroidal device where the hot ionized fuel (plasma) is confined by magnetic fields. Several heating systems are used in order to reach fusion relevant temperatures. Ion cyclotron resonance heating (ICRH) is one of these systems, where the plasma is heated by injecting radio frequency (RF) waves from an antenna located outside the plasma.
+
+This thesis concerns modeling of RF wave propagation and damping in hot tokamak plasmas. However, solving the wave equation is complicated because of spatial dispersion. This effect makes the wave equation an integro-differential equation that is difficult to solve using common numerical tools. The objective of this thesis is to develop numerical methods that can handle spatial dispersion and account for the geometric complexity outside the core plasma, such as the antenna and low-density regions (or SOL). The main results of this work is the development of the FEMIC code and the so-called iterative wavelet finite element scheme.
+
+FEMIC is a 2D axisymmetric code based on the finite element method. Its main feature is the integration of the core plasma with the SOL and antenna regions, where arbitrary geometric complexity is allowed. Moreover, FEMIC can apply a dielectric response in the SOL and in the region between the SOL and the core plasma (i.e. the pedestal). The code can account for perpendicular spatial dispersion (or FLR effects) for the fast wave only, which is sufficient for modeling harmonic cyclotron damping and transit time magnetic pumping. FEMIC was used for studying the effect of poloidal phasing on the ICRH power deposition on JET and ITER, and was benchmarked against other ICRH modeling codes in the fusion community successfully.
+
+The iterative wavelet finite element scheme was developed in order to account for spatial dispersion in a rigorous way. The method adds spatial dispersion effects to the wave equation by using a fixed point iteration scheme. Spatial dispersion effects are evaluated using a novel method based on Morlet wavelet decomposition. The method has been tested successfully for parallel and perpendicular spatial dispersion in one-dimensional models. The FEMIC1D code was developed in order to model ICRH and to study the properties of the numerical scheme. FEMIC1D was used to study second harmonic heating and mode conversion to ion-Bernstein waves (IBW), including a model for the SOL and pedestal. By studying the propagation and damping of the IBW, we verified that the scheme can account for FLR effects.},
+	language = {English},
+	school = {KTH},
+	author = {Vallejos, Pablos},
+	year = {2019},
+}
+
+@article{Badalassi03042023,
+	author = {V. Badalassi and A. Sircar and J. M. Solberg and J. W. Bae and K. Borowiec and P. Huang and S. Smolentsev and E. Peterson},
+	title = {FERMI: Fusion Energy Reactor Models Integrator},
+	journal = {Fusion Science and Technology},
+	volume = {79},
+	number = {3},
+	pages = {345--379},
+	year = {2023},
+	publisher = {American Nuclear Society},
+	doi = {10.1080/15361055.2022.2151818},
+	URL = {https://doi.org/10.1080/15361055.2022.2151818},
+	eprint = {https://doi.org/10.1080/15361055.2022.2151818},
+	abstract = { The Fusion Energy Reactor Models Integrator (FERMI) is an integrated simulation environment under development for the coupled simulation of the plasma, first wall, and blanket of fusion reactor designs. The FERMI goals are to shorten the overall design cycle while guaranteeing unprecedented accuracy, thus integrating fusion design activities, facilitating an optimal reactor design, and reducing development risks. These goals are achieved by coupling single-physics solvers into a multiphysics simulation environment (FERMI). The Integrated Plasma Simulator (IPS)–FASt TRANsport (IPS-FASTRAN) simulation framework is used for the following: plasma physics, MCNP/Shift codes for neutron and photon transport, OpenFoam for computational fluid dynamics and magnetohydrodynamics (MHD), HyPerComp Incompressible MHD solver for Arbitrary Geometry (HIMAG) for dual-coolant lead-lithium (DCLL) blankets, and DIABLO for structural mechanics simulations. These codes are coupled using the open-source library named precise Code Interaction Coupling Environment (preCICE). FERMI’s features are tested with the analysis of the liquid immersion blanket (LIB) [proposed in the Affordable Robust Compact (ARC)–class tokamak design], the DCLL blanket [proposed in the Fusion Pilot Plant (FPP) design], and other benchmark cases. The calculated figures of merit are the tritium breeding ratio, material activation, displacements per atom, shutdown dose rate, heat deposited in the vacuum vessel and blanket, temperature hot spots, and displacements caused by swelling and creep. A critical technical problem is multiphysics code coupling, which is tackled here, and the first three-dimensional (3D) simulations of the DCLL-FPP and LIB-ARC blankets are presented. To the authors’ knowledge, FERMI represents the first effort to perform 3D simulations of nuclear fusion first wall and blankets in a fully coupled multiphysics manner. }
+}
+
+@article{Mantsinen_2023,
+	doi = {10.1088/1741-4326/aceb08},
+	url = {https://dx.doi.org/10.1088/1741-4326/aceb08},
+	year = {2023},
+	month = {oct},
+	publisher = {IOP Publishing},
+	volume = {63},
+	number = {11},
+	pages = {112015},
+	author = {Mantsinen, M.J. and Jacquet, P. and Lerche, E. and Gallart, D. and Kirov, K. and Mantica, P. and Taylor, D. and Van Eester, D. and Baruzzo, M. and Carvalho, I. and Challis, C.D. and Dal Molin, A. and Delabie, E. and De La Luna, E. and Dumont, R. and Dumortier, P. and Eriksson, J. and Frigione, D. and Garcia, J. and Garzotti, L. and Giroud, C. and Henriques, R. and Hobirk, J. and Kappatou, A. and Kazakov, Y. and Keeling, D. and King, D. and Kiptily, V. and Lennholm, M. and Lomas, P. and Lowry, C. and Maggi, C.F. and Mailloux, J. and Maslov, M. and Menmuir, S. and Monakhov, I. and Morales, R.B. and Noble, C. and Nocente, M. and Patel, A. and Pucella, G. and Reux, C. and Rigamonti, D. and Rimini, F. and Sheikh, A. and Silburn, S. and Siren, P. and Solano, E.R. and Stancar, Z. and Tardocchi, M. and JET Contributors},
+	title = {Experiments in high-performance JET plasmas in preparation of second harmonic ICRF heating of tritium in ITER},
+	journal = {Nuclear Fusion},
+	abstract = {The reference ion cyclotron resonance frequency (ICRF) heating schemes for ITER deuterium–tritium (D-T) plasmas at the full magnetic field of 5.3 T are second harmonic heating of T and 3He minority heating. The wave-particle resonance location for these schemes coincide and are central at a wave frequency of 53 MHz at 5.3 T. Experiments have been carried out in the second major D-T campaign (DTE2) at JET, and in its prior D campaigns, to integrate these ICRF scenarios in JET high-performance plasmas and to compare their performance with the commonly used hydrogen (H) minority heating. In 50:50 D:T plasmas, up to 35% and 5% larger fusion power and diamagnetic energy content, respectively, were obtained with second harmonic heating of T as compared to H minority heating at comparable total input powers and gas injection rates. The core ion temperature was up to 30% and 20% higher with second harmonic T and 3He minority heating, respectively, with respect to H minority heating. These are favourable results for the use of these scenarios in ITER and future fusion reactors. According to modelling, adding ICRF heating to neutral beam injection using D and T beams resulted in a 10%–20% increase of on-axis bulk ion heating in the D-T plasmas due to its localisation in the plasma core. Central power deposition was confirmed with the break-in-slope and fast Fourier transform analysis of ion and electron temperature in response to ICRF modulation. The tail temperature of fast ICRF-accelerated tritons, their enhancement of the fusion yield and time behaviour as measured by an upgraded magnetic proton recoil spectrometer and neutral particle analyser were found in agreement with theoretical predictions. No losses of ICRF-accelerated ions were observed by fast ion detectors, which was as expected given the high plasma density of n e ≈ 7–8 × 1019 m−3 in the main heating phase that limited the formation of ICRF-accelerated fast ion tails. 3He was introduced in the machine by 3He gas injection, and the 3He concentration was measured by a high-resolution optical penning gauge in the sub-divertor region. The DTE2 experiments with 3He minority heating were carried with a low 3He concentration in the range of 2%–4% given the fact that the highest neutron rates with 3He minority heating in D plasmas were obtained at low 3He concentrations of ∼2%, which also coincided with the highest plasma diamagnetic energy content. In addition to 3He introduced by 3He gas injection, an intrinsic concentration of 3He of the order of 0.2%–0.4% was measured in D-T plasmas before 3He was introduced in the device, which is attributed to the radioactive decay of tritium to 3He. According to modelling, even such low intrinsic concentrations of 3He lead to significant changes in ICRF power partitioning during second harmonic heating of T due to absorption of up to 30% of the wave power by 3He.}
+}
+
